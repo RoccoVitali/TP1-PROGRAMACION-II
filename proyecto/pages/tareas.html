@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tareas</title>
+    <link rel="icon" href="../assets/icono.png" type="image/png">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+
+<header>
+<h1>Gestor de tareas</h1>
+<nav>
+<img src="../assets/icono.png" alt="logo" class="logo">
+
+<div class="links">
+    <a href="../index.html">Inicio</a>
+    <a href="tareas.html">Tareas</a>
+    <a href="info.html">Info</a>
+    <a href="contacto.html">Contacto</a>
+</div>
+</nav>
+</header>
+
+<main>
+
+<h2>Agregar tarea</h2>
+
+<input type="text" id="titulo" placeholder="Titulo">
+<input type="text" id="descripcion" placeholder="Descripcion">
+<input type="date" id="fecha">
+<input type="email" id="email" placeholder="Email">
+<input type="tel" id="telefono" placeholder="Telefono">
+
+<select id="prioridad">
+<option value="">Prioridad</option>
+<option>Alta</option>
+<option>Media</option>
+<option>Baja</option>
+</select>
+
+<select id="estado">
+<option value="pendiente">Pendiente</option>
+<option value="completada">Completada</option>
+</select>
+
+<button id="guardar">Guardar</button>
+
+<p id="error"></p>
+
+<h3>Filtro</h3>
+<select id="filtroEstado">
+<option value="">Todos</option>
+<option value="pendiente">Pendiente</option>
+<option value="completada">Completada</option>
+</select>
+
+<p id="contador"></p>
+
+<ul id="lista"></ul>
+
+</main>
+
+<footer>
+<p>Trabajo Practico Nº1 - Programación II </p>
+<p>Integrantes: Francesco Boletta, Julieta Del Sastre, Rocco Vitali</p>
+</footer>
+
+<script src="../app.js"></script>
+</body>
+</html>

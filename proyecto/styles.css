@@ -1,0 +1,126 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+
+header {
+    background: dodgerblue;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+}   
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+     margin-top: -90px;
+}
+
+.links {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+input, select {
+    width: 80%;
+    padding: 8px;
+}
+
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    background: dodgerblue;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: black;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+li {
+    background: #eee;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.pendiente {
+    border-left: 5px solid orange;
+}
+
+.completada {
+    border-left: 5px solid green;
+}
+
+
+#error {
+    color: red;
+    font-size: 14px;
+}
+
+textarea {
+    width: 80%;
+    height: 80px;
+    padding: 8px;
+}
+
+
+@media (min-width: 1024px) {
+    main {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    input, select {
+        width: 100%;
+    }
+}
