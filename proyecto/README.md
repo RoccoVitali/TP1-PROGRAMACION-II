@@ -1,5 +1,14 @@
 # Gestor de tareas (To-Do List) 
 
+
+## Integrantes
+
+- Francesco Boletta  
+- Julieta Del Sastre  
+- Rocco Vitali  
+
+---
+
 ## Objetivo del proyecto
 
 El objetivo de este trabajo práctico es aplicar conceptos de HTML, CSS y JavaScript, incluyendo manipulación del DOM, almacenamiento local y diseño responsive.
@@ -76,11 +85,4 @@ El sitio se adapta a diferentes dispositivos:
 
 ---
 
-## Integrantes
-
-- Francesco Boletta  
-- Julieta Del Sastre  
-- Rocco Vitali  
-
----
 
