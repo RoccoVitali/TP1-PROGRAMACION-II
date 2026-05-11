@@ -24,17 +24,18 @@
 </header>
 
 <main>
+    <h2>Contacto</h2>
+    <p>Si tenés alguna consulta, podés escribirnos:</p>
 
-<h2>Contacto</h2>
+    <form id="formularioContacto">
+    <input type="texto" id="nombre" placeholder="Nombre" required minlength="3">
+    <input type="email" id="email" placeholder="Email" required>
+    <textarea id="mensaje" placeholder="Mensaje" required></textarea>
 
-<p>Si tenés alguna consulta, podés escribirnos:</p>
-
-<input type="text" placeholder="Nombre">
-<input type="email" placeholder="Email">
-<textarea placeholder="Mensaje"></textarea>
-
-<button>Enviar</button>
-
+    <button type="enviar">Enviar</button>
+        
+    <p id="mensajeEstado" style="color: red;"></p>
+    </form>
 </main>
 
 <footer>
