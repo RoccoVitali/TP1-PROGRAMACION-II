@@ -29,3 +29,8 @@ document.getElementById('formularioContacto').addEventListener('enviar', functio
     
     this.reset();
 });
+
+function validarEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
