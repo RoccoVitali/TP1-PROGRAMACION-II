@@ -108,9 +108,13 @@ function mostrar() {
         eliminar.textContent = "X";
 
         eliminar.addEventListener("click", function () {
-            tareas.splice(index, 1);
-            localStorage.setItem("tareas", JSON.stringify(tareas));
-            mostrar();
+
+            if (confirm("¿Eliminar tarea?")) {
+                tareas.splice(index, 1);
+                localStorage.setItem("tareas", JSON.stringify(tareas));
+                mostrar();
+            }
+
         });
 
         const editar = document.createElement("button");
