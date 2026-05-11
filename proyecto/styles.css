@@ -52,8 +52,17 @@ main {
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+input, textarea {
+  display: block;
+  width: 100%; 
+  max-width: 500px; 
+  margin: 10px auto; 
+  box-sizing: border-box;
+  font-family: inherit;
+  padding: 8px;
+}
 
-input, select {
+select {
     width: 80%;
     padding: 8px;
 }
@@ -131,4 +140,13 @@ textarea {
     input, select {
         width: 100%;
     }
+}
+
+input:invalid:focus, textarea:invalid:focus {
+    border: 2px solid #ff4d4d;
+    outline: none;
+}
+
+input:valid:focus, textarea:valid:focus {
+    border: 2px solid #2ecc71;
 }
